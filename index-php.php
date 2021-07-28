@@ -29,9 +29,9 @@
 
                     <div class="col-3">
 
-                        <div class="card" style="width: 14rem;">
+                        <div class="card mb-5" style="width: 14rem;">
                             <img class="card-img-top" src="<?php echo $dischi[$i]['poster'];?>" alt="Card image cap">
-                            <div class="card-body">
+                            <div class="card-body text-light">
                                 <h5 class="card-title">
                                     <?php echo $dischi[$i]['title'];?>
                                 </h5>
