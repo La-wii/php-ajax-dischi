@@ -6,6 +6,13 @@
 
 body{
     background-color: black;
+    font-family: 'Style Script', cursive;
+}
+
+h1{
+    color: red;
+    font-size: 80px;
+    padding: 20px 0;
 }
 
 .card{
