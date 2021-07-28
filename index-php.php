@@ -1,3 +1,10 @@
+<?php
+    include 'data.php';
+
+    $stampa_dischi = count($dischi);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +20,37 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="text-center">ciao</p>
+
+    <main>
+        <div class="container-fluid">
+            <!-- start row -->
+            <div class="row mt-5 p-5">
+                <?php for ($i = 0; $i < $stampa_dischi; $i++){?>
+
+                    <div class="col-3">
+
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="<?php echo $dischi[$i]['poster'];?>" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <?php echo $dischi[$i]['title'];?>
+                                </h5>
+                                <h5 class="card-title">
+                                    <?php echo $dischi[$i]['author'];?>
+                                </h5>
+                                <p class="card-text">
+                                <?php echo $dischi[$i]['year'];?> 
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                <?php } ?>
+            </div>
+            <!-- end row -->
+        </div>
+    </main>
 </body>
 </html>
