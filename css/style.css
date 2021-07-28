@@ -12,3 +12,8 @@ body{
     background-color: transparent;
     border: none;
 }
+
+.card:hover{
+    border: 3px solid red;
+    padding: 2px;
+}
