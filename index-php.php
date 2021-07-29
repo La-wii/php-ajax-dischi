@@ -47,7 +47,7 @@
 
                             <img class="card-img-top" src="<?php echo $dischi[$i]['poster'];?>" alt="Card image cap">
 
-                            <div class="card-body text-light text-center">
+                            <div class="card-body text-center">
                                 
                                 <h3 class="card-title">
                                     <?php echo $dischi[$i]['author'];?>
